@@ -1,0 +1,9 @@
+---
+- name: Install LEMP Stack
+  hosts: localhost
+  become: True
+  tasks:
+     - name: Stop container links with docker_compose module
+       docker_compose:
+        project_src: /home/ubuntu/lamp/lemp/
+        state: absent

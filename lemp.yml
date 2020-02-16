@@ -1,0 +1,26 @@
+---
+- name: Install LEMP Stack
+  hosts: localhost
+  become: True
+  tasks:
+     - name: Install Latest Python Version
+       apt:
+          state: latest
+          name: python-pip
+     
+     - name: Install Latest Docker and pip_requests
+       pip:
+          name:
+             - docker
+             - requests>=2.20.1
+     
+     - name: Get index.php file from gitlab
+       get_url:
+          url: https://gitlab.com/martin.mystery9/docker_lamp/-/raw/master/index.php
+          dest: /home/ubuntu/lamp/lemp/index.php 
+
+
+     - name: Start container links with docker_compose module
+       docker_compose:
+        project_src: /home/ubuntu/lamp/lemp/
+        state: present
