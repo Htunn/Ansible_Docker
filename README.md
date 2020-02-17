@@ -29,5 +29,5 @@ sudo apt-key fingerprint 0EBFCD88
    $(lsb_release -cs) \
    stable"
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install docker-ce docker-ce-cli containerd.io \
 sudo apt install docker-compose
