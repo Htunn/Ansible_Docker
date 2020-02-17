@@ -7,8 +7,8 @@ ubuntu 18.04 EC2 Instance \
 Associate Elastic IP
 
 
-sudo apt install software-properties-common
-sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt install software-properties-common  
+sudo apt-add-repository --yes --update ppa:ansible/ansible  
 sudo apt install ansible
 
 ansible --version  
