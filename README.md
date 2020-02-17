@@ -4,6 +4,7 @@ LEMP Stack Docker
 Prerequisite
 
 ubuntu 18.04 EC2 Instance
+Associate Elastic IP
 
 
 sudo apt install software-properties-common
