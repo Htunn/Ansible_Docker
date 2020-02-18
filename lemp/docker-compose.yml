@@ -9,7 +9,7 @@ web:
         - php
         - mariadb
 php:
-    image: php:7.2-fpm
+    image: registry.gitlab.com/sillx/finalstep:latest
     volumes:
         - .:/code
 mariadb:
