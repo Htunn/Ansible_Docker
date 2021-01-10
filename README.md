@@ -1,14 +1,17 @@
 
 LEMP Stack Docker 
 
-Prerequisite
+#Prerequisite
 
 ubuntu 18.04 EC2 Instance \
 Associate Elastic IP
 
+# Install require packages and repo
 
 sudo apt install software-properties-common  
+
 sudo apt-add-repository --yes --update ppa:ansible/ansible  
+
 sudo apt install ansible
 
 ansible --version  
@@ -31,4 +34,10 @@ sudo apt-key fingerprint 0EBFCD88
    stable"
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io \
+
 sudo apt install docker-compose
+
+# Test ansible docker playbook
+
+- ansible-playbook lemp.yml
+
