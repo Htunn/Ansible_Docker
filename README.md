@@ -1,7 +1,7 @@
 
-#LEMP Stack Docker 
+# LEMP Stack Docker 
 
-##Prerequisite
+## Prerequisite
 
 * ubuntu 18.04 EC2 Instance 
 * Associate Elastic IP
